@@ -1,0 +1,120 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
+<!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> -->
+
+<html class="kor">
+<head>
+	<script type="text/javascript" src="../webapp/jquery/jquery-3.7.0.min.js"></script>
+	<link href="../webapp/css/consult.css" rel="stylesheet" type="text/css">
+	<link href="../webapp/css/cssSet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../webapp/js/consult/init.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a140a6ef5eb24d9195c32555b364b653"></script>
+</head>
+<body>
+  <header style="margin-top : -5px;">
+    <div class="mainPage" style="cursor:pointer;">
+    		<img src="../webapp/img/titleLogo.png" style="width:60px;height:50px;"/>
+    	<a href="#" class="">
+    		<span class="logo">착한가게</span><span class="number">24</span>
+    	</a>
+    </div>
+    
+    <nav class="navbar">
+	    <div class="menu-toggle" id="menuToggle">
+	        <div class="bar"></div>
+	        <div class="bar"></div>
+	        <div class="bar"></div>
+	    </div>
+	    <ul class="nav-items">
+	      <li class="nav-item"><a href="#" class="nav-link mainPage" style="font-weight:bold;">HOME</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link aboutPage" style="font-weight:bold;">ABOUT US</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link storePage" style="font-weight:bold;">무인매장</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link consultPage" style="font-weight:bold;">상담문의</a></li>
+	    </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+<!--   <main> -->
+    <!-- HOME SECTION -->
+	<div style="opacity:0.7;display:flex;height:400px;text-align:center;width:100%;background-size: cover;background-image:url('../webapp/img/contact.jpg');background-repeat: no-repeat;">
+		<span class="logo" style="margin:auto;color:#fff;-webkit-text-stroke:3px black;">Contact Us</span>
+   	</div>
+     <div class="mt50"></div>
+	<div style="border-bottom:2px solid #AFD485;width:90%;margin:auto;"></div>
+	
+	
+     <div class="mt50"></div>
+	<div style="width:100%;height:50px;text-align:center;">
+		<span class="fontSetLg" style="display:inline-block;">전화상담</span>
+   	</div>
+	<div style="margin:auto;text-align:center;">
+	     <img src="../webapp/img/call.png" style="width:30px;height:30px;"/>&nbsp;
+		 <a href="tel:1588-7126" class="fontSetLg consulting" style="display:inline-block;">1588-7126</a><br>
+	     <div class="mt30"></div>
+		 <span class="fontGodoLgSet">전화번호 클릭 시 전화 연결이 가능합니다.</span><br>
+	</div>
+     <div class="mt100"></div>
+	<div style="width:90%;margin:auto;">
+		<hr>
+	</div>
+    <div class="mt100"></div>
+	<div style="width:100%;height:50px;text-align:center;">
+		<span class="fontSetLg" style="display:inline-block;">문자상담</span>
+   	</div>
+   	<div class="mt30"></div>
+	<div style="margin:auto;text-align:center;">
+		<textarea class="content" rows="20" placeholder="상담문의할 내용을 입력해 주세요."></textarea>
+	</div>
+	<div class="mt10"></div>
+	<div class="sms" style="text-align:center;margin-top:5px;">
+		<a class="fontGodoLgSet"><span>SEND</span></a>
+	</div>
+     <div class="mt100"></div>
+	<div style="width:90%;margin:auto;">
+		<hr>
+	</div>
+	
+     <div class="mt100"></div>
+	<div style="width:100%;height:50px;text-align:center;">
+		<span class="fontSetLg" style="display:inline-block;">본사 직영 매장</span>
+   	</div>
+     <div class="mt50"></div>
+	<div id="map" style="margin:auto;width:60%;height:500px;"></div><br>
+	<div class="fontGodoLgSet" style="text-align:center;">
+		서울특별시 서울 양천구 목동중앙남로 12 1층 착한가게24
+	</div>
+
+
+    <!-- OFFER SECTION -->
+  <footer>
+    <div class="container top-footer mt400" style="display:flex;">
+	  <div class="mt100"></div>
+		<div style="width:100%;height:50px;">
+		<span class="fontGodoLgSet">아래 번호 클릭 시 전화 연결이 가능합니다.</span><br>
+		<span class="fontSetLg">[ 상담문의 ]</span>&nbsp;
+		<a href="tel:1588-7126" class="fontSetLg consulting" style="display:inline-block;">1588-7126</a>&nbsp;
+		<span class="fontSetTitle" style="display:inline-block;">(연중무휴)</span>
+      </div>
+      <div>
+      	<img src="../webapp/img/market.jpg" style="width:150px;height:150px;"/>
+      </div>
+    </div>
+    <div class="container end-footer1" style="background-color:#787878;height:150px;text-align:center;">
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;padding-top:20px;">착한가게24</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">사업자등록번호 : 126-35-01322</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">대표자 : 조 영 진</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">TEL. 1588-7126</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">서울특별시 서울 양천구 목동중앙남로 12 1층 착한가게24</span>
+    </div>
+    <div class="container end-footer">
+      <a class="designer" href="#">
+      	전화 아이콘  제작자: IYAHICON - Flaticon<br>
+      	Luna J
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

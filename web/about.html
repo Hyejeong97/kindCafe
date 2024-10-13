@@ -1,0 +1,123 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
+<!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> -->
+
+<html class="kor">
+<head>
+	<script type="text/javascript" src="../webapp/jquery/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a140a6ef5eb24d9195c32555b364b653"></script>
+	<link href="../webapp/css/about.css" rel="stylesheet" type="text/css">
+	<link href="../webapp/css/cssSet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../webapp/js/about/init.js"></script>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+</head>
+<body>
+  <header style="margin-top : -5px;">
+    <div class="mainPage" style="cursor:pointer;">
+    		<img src="../webapp/img/titleLogo.png" style="width:60px;height:50px;"/>
+    	<a href="#" class="">
+    		<span class="logo">착한가게</span><span class="number">24</span>
+    	</a>
+    </div>
+    
+    <nav class="navbar">
+	    <div class="menu-toggle" id="menuToggle">
+	        <div class="bar"></div>
+	        <div class="bar"></div>
+	        <div class="bar"></div>
+	    </div>
+	    <ul class="nav-items">
+	      <li class="nav-item"><a href="#" class="nav-link mainPage" style="font-weight:bold;">HOME</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link aboutPage" style="font-weight:bold;">ABOUT US</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link storePage" style="font-weight:bold;">무인매장</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link consultPage" style="font-weight:bold;">상담문의</a></li>
+	    </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+<!--   <main> -->
+    <!-- HOME SECTION -->
+    
+  	<div class="mt100"></div>
+		<div style="width:100%;height:50px;text-align:center;">
+		<span class="fontSetLg" style="display:inline-block;">About Us</span>
+     </div>
+     <div class="mt50"></div>
+	<div style="border-bottom:2px solid #AFD485;width:90%;margin:auto;"></div>
+	
+    <div class="mt50"></div>
+	<div style="width:60%;margin:auto;">
+		<span class="fontSetCol2">착한가게24 소개</span>
+	    	<div class="mt20"></div>
+		<br>
+		<div style="border-radius:20px 20px 20px 0px;background-color:#F0ECEB;padding:15px;">
+			<p class="fontGodoLgSet mt10">착한가게24는 <span class="lineSet" style="font-weight:bold;color:black;">유통 30년 이상의 경험을 쌓아온 전문가들</span>로 구성된 편의점 기업입니다.
+			 저희는 고객들에게 현대적이고 편리한 쇼핑 경험을 제공하며 지역사회와의 <span class="lineSet" style="font-weight:bold;">긍정적인 상호작용</span>을 추구합니다.</p>
+		</div>
+		<br>
+		<div style="border-radius:0px 20px 20px 20px;background-color:#F0ECEB;padding:15px;">
+			<span class="fontSetTitle2">우리의 창업 이야기</span><br>
+			<p class="fontGodoLgSet mt10">착한가게24의 창업 이야기는 고객 중심의 비즈니스 모델과  <span class="lineSet" style="font-weight:bold;color:black;">가맹점주의 편의 제공</span>을 위해 시작되었습니다.
+			 우리는 지역사회의 편의점 경험을 혁신적으로 변화시키려는 열망을 갖고, 무인 시스템과 최신 기술을 활용하여 이를 실현하고자 했습니다.</p>
+		</div>
+		<br>
+		<div style="border-radius:20px 20px 20px 0px;background-color:#F0ECEB;padding:15px;">
+			<span class="fontSetTitle2">우리의 비전</span><br>
+			<p class="fontGodoLgSet mt10">저희의 비전은 가맹점주들과 함께 더 나은 미래를 만드는 것입니다. 
+			착한가게24를 통해 지역사회에 긍정적인 영향을 미치며, 가맹점주들에게   <span class="lineSet" style="font-weight:bold;color:black;">성공적인 비즈니스 기회를 제공</span>합니다.
+			 우리는 무인편의점 산업의 미래를 선도하고 지속 가능한 비즈니스 생태계를 구축하기 위해 노력하고 있습니다.</p>
+		</div>
+		<br>
+		<div style="border-radius:0px 20px 20px 20px;background-color:#F0ECEB;padding:15px;">
+			<span class="fontSetTitle2">우리의 지원</span><br>
+			<p class="fontGodoLgSet mt10">착한가게24는 가맹점주들에게   <span class="lineSet" style="font-weight:bold;color:black;">다양한 지원을 제공</span>합니다. 
+			우리의 팀은 창업 프로세스를 원활하게 진행하도록 도와주고, 올바른 교육과 권장 사항을 제공하여 성공을 위한 기반을 마련합니다.</p>
+		</div>
+		<br>
+		<div style="border-radius:20px 20px 20px 0px;background-color:#F0ECEB;padding:15px;">
+			<span class="fontSetTitle2">함께 가치를 만들어가요</span><br>
+			<p class="fontGodoLgSet mt10">우리는   <span class="lineSet" style="font-weight:bold;color:black;">가맹점주들과 함께 가치를 만들어가는 것</span>을 중요하게 생각합니다. 
+			착한가게24는 협력과 상호 작용을 통해 지역사회와 함께 성장하고 발전하고자 합니다.
+			착한가게24에 참여하여 함께 혁신을 이끄는 과정에 참여해 주시면 감사하겠습니다. 
+			<span class="lineSet" style="font-weight:bold;color:black;">우리의 창업 가이드라인을 통해 무인편의점 비즈니스를 시작하고 성공을 찾아가는 여정에 동참하세요.</span><br>
+			감사합니다.</p>
+		</div>
+	</div>
+	
+	
+
+
+    <!-- OFFER SECTION -->
+  <footer>
+    <div class="container top-footer mt500" style="display:flex;">
+	  <div class="mt10"></div>
+		<div style="width:100%;height:50px;">
+		<span class="fontGodoLgSet">아래 번호 클릭 시 전화 연결이 가능합니다.</span><br>
+		<span class="fontSetLg">[ 상담문의 ]</span>&nbsp;
+		<a href="tel:1588-7126" class="fontSetLg consulting" style="display:inline-block;">1588-7126</a>&nbsp;
+		<span class="fontSetTitle" style="display:inline-block;">(연중무휴)</span>
+      </div>
+      <div>
+      	<img src="../webapp/img/market.jpg" style="width:150px;height:150px;"/>
+      </div>
+    </div>
+    <div class="container end-footer1" style="background-color:#787878;height:150px;text-align:center;">
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;padding-top:20px;">착한가게24</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">사업자등록번호 : 126-35-01322</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">대표자 : 조 영 진</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">TEL. 1588-7126</span><br>
+      	<span class="fontGodo14" style="color:#fff;display:inline-block;">서울특별시 서울 양천구 목동중앙남로 12 1층 착한가게24</span>
+    </div>
+    <div class="container end-footer">
+      <a class="designer" href="#">Luna J</a>
+    </div>
+  </footer>
+</body>
+
+</html>
