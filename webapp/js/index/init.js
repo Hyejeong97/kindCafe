@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	var x = 126.868904;
     var y = 37.5355793;
-    setMap(x, y);   
+   // setMap(x, y);   
         
     $("span.store").on("click", function(){
 		x = $(this).attr("x");
