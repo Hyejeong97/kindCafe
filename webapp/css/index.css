@@ -59,14 +59,17 @@ h1 {
 
 /* Sections */
 
+section:not(:first-child){
+    padding: 30px;
+}
 section {
   width: 100%;
-  padding: 30px;
   background: #fff;
   border-bottom: 1px solid #ccc;
   height: 800px;
   text-align: center;
 }
+
 section:nth-child(even) {
   background: #fff;
 }
