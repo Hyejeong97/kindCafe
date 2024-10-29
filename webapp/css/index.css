@@ -43,7 +43,7 @@ nav ul li a {
   transition: all 0.2s ease;
 }
 nav ul li a:hover {
-  color: #34495E;
+  color: #d8a065;
 }
 a.active {
   border-bottom: 2px solid #ecf0f1;
