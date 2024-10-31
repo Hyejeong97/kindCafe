@@ -93,10 +93,10 @@ $(document).ready(function(){
 	    }
 	}
 	
-	var canvas=document.getElementById('pieChart');
-	canvas.width = 300;
-	canvas.height = 300;
-	var pieChart = new Chart(canvas,config);
+	// var canvas=document.getElementById('pieChart');
+	// canvas.width = 300;
+	// canvas.height = 300;
+	// var pieChart = new Chart(canvas,config);
 	
 	
 	var dataset = {
@@ -138,10 +138,10 @@ $(document).ready(function(){
 	    }
 	}
 	
-	var canvas = document.getElementById('pieChart2');
-	canvas.width = 300;
-	canvas.height = 300;
-	var pieChart2 = new Chart(canvas, config);
+	// var canvas = document.getElementById('pieChart2');
+	// canvas.width = 300;
+	// canvas.height = 300;
+	// var pieChart2 = new Chart(canvas, config);
 	
 });
 
