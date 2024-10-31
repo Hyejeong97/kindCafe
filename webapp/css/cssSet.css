@@ -44,6 +44,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'twaysky';
+    font-weight: normal; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff) format('woff');
+}
+
+
 .why1, .why3 {
 	color : #FC5230;
 	-webkit-text-stroke: 1.5px black;
